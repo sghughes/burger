@@ -3,7 +3,7 @@ $(function() {
         var id =$(this).data('id');
         var newDevour = $(this).data('newdevour');
         var newDevourState = {
-            devour: newDevour
+            devoured: newDevour
         };
 
         $.ajax('/api/burgers/' + id, {
