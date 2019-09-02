@@ -20,8 +20,9 @@ $(function() {
 
         var newBurger = {
             burger_name: $('#burgerInput').val().trim(),
-            devoured: false
+            devoured: 0
         };
+
         $.ajax('/api/burgers',{
             type: 'POST',
             data: newBurger
@@ -30,6 +31,4 @@ $(function() {
             location.reload();
         })
     })
-
-
 });

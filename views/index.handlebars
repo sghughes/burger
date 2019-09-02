@@ -1,21 +1,24 @@
 <h1>Eat-Da-Burger!</h1>
 
 <h3>Not devoured</h3>
-    <ul>
-        {{#each burgers }}
-            {{#unless devoured }}
-                {{burgers devoured=false}}
-            {{/unless }}
-        {{/each }}
+    <ul style='list-style: none'>
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{burgers devoured=1}}
+            <li>{{this.burger_name}}</li>
+            {{/unless}}
+
+        {{/each}}
     </ul>
 
 <h3>Devoured</h3>
-    <ul>
-        {{#each burgers }}
-            {{#if devoured }}
-                {{burgers devoured=true}}
-            {{/if }}
-        {{/each }}
+    <ul style='list-style: none'>
+        {{#each burgers}}
+            {{#if devoured}}
+                {{burgers devoured=1}}
+                <li>{{this.burger_name}}</li>
+            {{/if}}
+        {{/each}}
     </ul>
 
 <h3>Add a burger</h3>
