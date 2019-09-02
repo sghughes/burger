@@ -13,7 +13,7 @@ var burger = {
         })
     },
     updateOne: function(objColVals, condition, burg){
-        orm.updateOne('burgers', objColVals, condition, function(burg){
+        orm.updateOne('burgers', objColVals, condition, function(res){
             burg(res);
         })
     }
