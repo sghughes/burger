@@ -1,0 +1,13 @@
+
+
+#burgerBackground {
+    background-image: url(../images/pexels-photo-2015097.jpeg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #242426;
+
+}
+
+h1 {
+    color: white;
+}
